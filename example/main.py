@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os
 
 import keyboard
 from pip_services3_commons.config import ConfigParams
@@ -10,10 +11,13 @@ from pip_services3_components.count import LogCounters
 from pip_services3_components.log import ConsoleLogger
 from pip_services3_rpc.services import HttpEndpoint, StatusRestService, HeartbeatRestService
 
-from example.logic.DummyController import DummyController
-from example.services.DummyCommandableHttpService import DummyCommandableHttpService
-from example.services.DummyRestService import DummyRestService
+from logic.DummyController import DummyController
+from services.DummyCommandableHttpService import DummyCommandableHttpService
+from services.DummyRestService import DummyRestService
 from pip_services3_swagger.services.SwaggerService import SwaggerService
+
+# add parent directory to path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 
 # Create components
 logger = ConsoleLogger()
