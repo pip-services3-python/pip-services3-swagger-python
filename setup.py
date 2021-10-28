@@ -8,7 +8,7 @@ except:
 
 setup(
     name='pip_services3_swagger',
-    version='3.0.1',
+    version='3.0.2',
     url='http://github.com/pip-services3-python/pip-services3-swagger-python',
     license='MIT',
     description='Swagger UI for Pip.Services in Python',
@@ -21,12 +21,9 @@ setup(
     zip_safe=True,
     platforms='any',
     install_requires=[
-        'iso8601', 
-        'PyYAML', 
-        'pystache',
-        'pip_services3_commons',
-        'pip_services3_rpc',
-        'pip_services3_components'
+        'pip-services3-commons >= 3.3.9, < 4.0',
+        'pip-services3-components >= 3.5.0, < 4.0',
+        'pip-services3-rpc >= 3.2.12, < 4.0'
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
