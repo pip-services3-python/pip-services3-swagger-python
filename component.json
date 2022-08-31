@@ -1,5 +1,5 @@
 {
-    "name":  "pip_services3_swagger",
+    "name":  "pip-services3-swagger",
     "type": "module",
     "language": "python",
     "version": "3.0.2",
